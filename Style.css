@@ -15,13 +15,17 @@ body {
 .header {
   background-color: #00e1ff;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 85px;
-  padding: 5px 10%;
+  padding: 5px 5%;
 }
+
+/* logo */
+
 .header .logo {
   cursor: pointer;
+  margin-right: auto;
 }
 
 .header .logo img {
@@ -34,6 +38,8 @@ body {
 .header .logo img:hover {
   transform: scale(1.1);
 }
+
+/* Palabras de la barra superior */
 
 .header .nav-links {
   list-style: none;
@@ -57,6 +63,7 @@ body {
 .header .nav-links li a:hover {
   color: #ffffff;
 }
+/* boton contacto */
 
 .header .btn button {
   font-weight: 700;

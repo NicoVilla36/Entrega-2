@@ -9,11 +9,11 @@
 }
 
 body {
-  background-color: #fff59d;
+  background-color: #3d3d3d;
 }
 
 .header {
-  background-color: #1b3039;
+  background-color: #00e1ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,13 +25,14 @@ body {
 }
 
 .header .logo img {
-  height: 80px;
+  height: 65px;
   width: auto;
   transition: all 0.3s;
+  margin-right: 10px;
 }
 
 .header .logo img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .header .nav-links {
@@ -49,19 +50,19 @@ body {
 
 .header .nav-links a {
   font-size: 700;
-  color: #eceff1;
+  color: #000000;
   text-decoration: none;
 }
 
 .header .nav-links li a:hover {
-  color: #ffbc0e;
+  color: #ffffff;
 }
 
 .header .btn button {
   font-weight: 700;
-  color: #1b3039;
+  color: #ffffff;
   padding: 9px 25px;
-  background: #eceff1;
+  background: #000000;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -69,7 +70,7 @@ body {
 }
 
 .header .btn button:hover {
-  background-color: #e2f1f8;
-  color: #ffbc0e;
+  background-color: #000000;
+  color: #ffffff;
   transform: scale(1.1);
 }

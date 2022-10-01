@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
 }
 
 body {
-  background-color: #3d3d3d;
+  background-color: #ffffff;
 }
 
 .header {
@@ -17,8 +16,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 85px;
-  padding: 5px 5%;
+  height: 60px;
+  padding: 5px 2%;
 }
 
 /* logo */
@@ -29,7 +28,7 @@ body {
 }
 
 .header .logo img {
-  height: 65px;
+  height: 40px;
   width: auto;
   transition: all 0.3s;
   margin-right: 10px;
@@ -80,4 +79,84 @@ body {
   background-color: #000000;
   color: #ffffff;
   transform: scale(1.1);
+}
+
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO */
+
+#hero {
+  display: flex;
+  padding: 70px 0px;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.hero-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-presentation h1 {
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-presentation p {
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 350px;
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+.button-container a {
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background-color: black;
+  color: white;
+}
+
+.alt-btn {
+  background-color: white;
+  color: black;
+}
+
+.hero-img {
+  width: 475px;
+}
+
+/* ABOUT */
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 850px;
+  padding: 30px 0px;
+  font-weight: 300;
+  text-align: center;
 }

@@ -44,20 +44,20 @@ body {
 
 /* Palabras de la barra superior */
 
-.header .nav-links {
+.header .navbar-list {
   list-style: none;
 }
 
-.header .nav-links li {
+.header .navbar-list li {
   display: inline-block;
   padding: 0 20px;
 }
 
-.header .nav-links li:hover {
+.header .navbar-list li:hover {
   transform: scale(1.1);
 }
 
-.header .nav-links a {
+.header .navbar-list a {
   font-size: 700;
   color: #000000;
   text-decoration: none;
@@ -76,7 +76,7 @@ body {
   display: none;
 }
 
-.header .nav-links li a:hover {
+.header .navbar-list li a:hover {
   color: #ffffff;
 }
 /* boton contacto */
@@ -163,7 +163,7 @@ main {
 }
 
 .hero-img {
-  width: 475px;
+  width: 600px;
 }
 
 /* ABOUT */
@@ -207,8 +207,8 @@ main {
 }
 
 @media (max-width: 576px) {
-  .nav-links {
-    background-color: #ffffff;
+  .navbar ul {
+    background-color: #5e5e5e;
     width: 100%;
     height: calc(100vh - 80px);
     position: absolute;
@@ -217,5 +217,22 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4s ease-out;
+  }
+  .btn {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+  }
+  .hero-presentation p {
+    max-width: 100%;
   }
 }
